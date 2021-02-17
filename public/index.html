@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  </head>
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      min-height: 100%;
+    }
+    .is-rounded{
+      border-radius: 4px;
+    }
+    .has-border-primary{
+      border: 2px solid #1D72AA;
+    }
+    .has-custom-background{
+      background-color: #f5f5f5;
+    }
+    .has-shadow{
+      box-shadow: 5px 5px 20px #d5d5d5;
+    }
+    .custom-input{
+      padding: 10px;
+      border: 1px solid #d5d5d5;
+      width: 100%;
+      border-radius: 5px;
+    }
+    .tag-input{
+      padding: 10px;
+      width: 150px;
+      border:0;
+      background-color: transparent;
+      border-bottom: 1px solid #d5d5d5;
+      margin-right: 10px;
+    }
+    .tag-input:focus{
+      outline: 0;
+      border-bottom: 1px solid cadetblue;
+    }
+    .tag-button{
+      padding:5px 10px;
+      background-color: cadetblue;
+      color: white;
+      border: 1px solid cadetblue;
+      border-radius: 3px;
+      cursor: pointer;
+     
+    }
+    .is-clickable{
+      cursor: pointer;
+    }
+    .w-90{
+      width: 90%;
+    }
+    .w-100{
+      width: 100%;
+    }
+    .flex{
+      display: flex;
+    }
+  </style>
+  <body class="has-custom-background">
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
